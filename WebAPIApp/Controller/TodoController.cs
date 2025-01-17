@@ -14,8 +14,12 @@ namespace WebAPIApp.Controllers
         {
             _todoService = todoService;
         }
-
+        /// <summary>
+        /// Retrieves all to-do items.
+        /// </summary>
+        /// <returns>List of to-do items.</returns>
         // GET: api/todo
+        
         [HttpGet]
         public IActionResult GetTodos()
         {
